@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 
@@ -21,5 +22,15 @@ public class MainClassTest extends MainClass {
             System.out.println("getClassNumber works correctly " + classNumber);
         else
             System.out.println("getClassNumber does not work correctly " + classNumber);
+    }
+
+    @Test
+    public void testGetClassString() {
+        /*** тест  проверяет, что метод getClassString возвращает строку Hello или hello ***/
+        String class_string = getClassString();
+        Assert.assertTrue(
+                "testGetClassString works False ",
+                class_string.contains("Hello") || class_string.contains("hello")
+        );
     }
 }
