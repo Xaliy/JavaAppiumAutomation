@@ -17,6 +17,8 @@ public class MainClassTest extends MainClass  {
         /*** тест  проверяет, что метод getClassNumber возвращает число больше 45 ***/
         if (getClassNumber() > 45 )
             System.out.println("getClassNumber works correctly " +  getClassNumber());
+            System.out.println("getClassNumber works correctly !!!!" +  getClassNumber());
+
         else
             System.out.println("getClassNumber does not work correctly " +  getClassNumber());
     }
